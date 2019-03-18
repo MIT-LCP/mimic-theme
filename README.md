@@ -1,2 +1,3 @@
-# mimic-theme
-Theme for MIMIC websites
+# MIMIC theme
+
+MIMIC theme based on the [gohugo](https://gohugo.io) website
