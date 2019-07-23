@@ -28,17 +28,33 @@ body {
 
 .header {
     display: table;
-    height: 75%;
+    height: 40%;
     width: 100%;
-    min-height: 50%;
+    min-width: 100%;
     position: relative;
-    background: url(../img/header.jpg) no-repeat center center fixed;
+    background: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+        url(../img/header.jpg) no-repeat center center;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     z-index: 99999;
     background-color: black;
+}
+
+.intro-heading {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 50px;
 }
 
 .logo {
