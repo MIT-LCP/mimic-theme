@@ -35,13 +35,10 @@
             <div class="buttonbox">
                 <a href="/about/data/" class="btn btn-primary btn-lg">Learn <i class="icon-idea"></i></a>
                 <!--<a href="#action" class="btn btn-success btn-lg">Install <i class="icon-arrow-down"></i></a>-->
-                <a href="/about/access/" class="btn btn-success btn-lg">Data <i
-                        class="icon-arrow-down"></i></a>
+                <a href="/about/access/" class="btn btn-success btn-lg">Data <i class="icon-arrow-down"></i></a>
                 <!--<a href="http://discuss.gohugo.io/" class="btn btn-info btn-lg">Community <i class="icon-talking"></i></a>-->
-                <a href="/community/contributing/" class="btn btn-info btn-lg">Community <i
-                        class="icon-talking"></i></a>
-                <a href="{{ .Site.Params.GitHubURL }}" class="btn btn-dark btn-lg">Code <i
-                        class="fa fa-github fa-lg"></i></a>
+                <a href="/community/contributing/" class="btn btn-info btn-lg">Community <i class="icon-talking"></i></a>
+                <a href="{{ .Site.Params.GitHubURL }}" class="btn btn-dark btn-lg">Code <i class="fa fa-github fa-lg"></i></a>
             </div>
         </div>
     </div>
@@ -120,30 +117,30 @@
         <!-- Acknowledgements -->
         {{ if .Site.Params.Acknowledgement.citation }}
         <div class="callout">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-md-offset-3 text-center">
-                  <i class="lead-icon icon-circlestar"></i>
-                <h2>Acknowledgements</h2>
-                <p class="lead">
-                If you use our data, code, or algorithms in your work, we would be grateful if you cite: <br />
-                <br />
-                <blockquote>
-                {{ .Site.Params.Acknowledgement.citation }}
-                </blockquote>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <i class="lead-icon icon-circlestar"></i>
+                        <h2>Acknowledgements</h2>
+                        <p class="lead">
+                            If you use our data, code, or algorithms in your work, we would be grateful if you cite: <br />
+                            <br />
+                            <blockquote>
+                                {{ .Site.Params.Acknowledgement.citation }}
+                            </blockquote>
 
-                <br />
-                {{ if .Site.Params.Acknowledgement.BibTeX }}
-                <br />
-                <blockquote>
-                    {{ .Site.Params.Acknowledgement.BibTeX }}
-                </blockquote>
-                {{ end }}
+                            <br />
+                            {{ if .Site.Params.Acknowledgement.BibTeX }}
+                            <br />
+                            <blockquote>
+                                {{ .Site.Params.Acknowledgement.BibTeX }}
+                            </blockquote>
+                            {{ end }}
 
-                </p>
-              </div>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
         {{ end }}
 
@@ -153,8 +150,7 @@
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 text-center">
                         <h1 style="padding-bottom:.5em;">Getting Started</h1>
-                        <a href="about/access" class="btn btn-lg btn-primary">Accessing the data <i
-                                class="icon-arrow-down"></i></a>
+                        <a href="about/access" class="btn btn-lg btn-primary">Accessing the data <i class="icon-arrow-down"></i></a>
                     </div>
                 </div>
             </div>
