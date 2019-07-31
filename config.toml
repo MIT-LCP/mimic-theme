@@ -4,6 +4,24 @@ MetaDataFormat = "yaml"
 [params]
     GitHubURL = "https://github.com/mit-lcp/mimic-theme"
     
+[params.button1]
+    name = "Learn"
+    button = "btn-primary"
+    url = "/about/data"
+    icon = "icon-idea"
+
+[params.button2]
+    name = "Data"
+    button = "btn-success"
+    url = "/about/access"
+    icon = "icon-arrow-down"
+
+[params.button3]
+    name = "Code"
+    button = "btn-dark"
+    url = "https://github.com/mit-lcp/mimic-cxr/"
+    icon = "fa fa-github fa-lg"
+
 [params.segment1]
     title = ""
     text = ""
