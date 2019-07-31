@@ -32,13 +32,17 @@
     <div id="top" class="header">
         <div class="vert-text">
             <div class="col-md-12 text-center intro-heading">{{ .Site.Params.Segment1.Title }}</div>
+
             <div class="buttonbox">
-                <a href="/about/data/" class="btn btn-primary btn-lg">Learn <i class="icon-idea"></i></a>
-                <!--<a href="#action" class="btn btn-success btn-lg">Install <i class="icon-arrow-down"></i></a>-->
-                <a href="/about/access/" class="btn btn-success btn-lg">Data <i class="icon-arrow-down"></i></a>
-                <!--<a href="http://discuss.gohugo.io/" class="btn btn-info btn-lg">Community <i class="icon-talking"></i></a>-->
-                <a href="/community/contributing/" class="btn btn-info btn-lg">Community <i class="icon-talking"></i></a>
-                <a href="{{ .Site.Params.GitHubURL }}" class="btn btn-dark btn-lg">Code <i class="fa fa-github fa-lg"></i></a>
+                {{ if .Site.Params.Button1 }}
+                <a href="{{ .Site.Params.Button1.URL }}" class="btn btn-lg {{ .Site.Params.Button1.Button }}">{{ .Site.Params.button1.name }} <i class="{{ .Site.Params.button1.icon }}"></i></a>
+                {{ end }}
+                {{ if .Site.Params.Button2 }}
+                <a href="{{ .Site.Params.Button2.URL }}" class="btn btn-lg {{ .Site.Params.Button2.Button }}">{{ .Site.Params.Button2.name }} <i class="{{ .Site.Params.Button2.icon }}"></i></a>
+                {{ end }}
+                {{ if .Site.Params.Button3 }}
+                <a href="{{ .Site.Params.Button3.URL }}" class="btn btn-lg {{ .Site.Params.Button3.Button }}">{{ .Site.Params.Button3.name }} <i class="{{ .Site.Params.Button3.icon }}"></i></a>
+                {{ end }}
             </div>
         </div>
     </div>
